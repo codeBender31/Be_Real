@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  lab-insta-parse
 //
-//  Created by Bender 3/7/2024
+//  Created by Bender on 10/29/22.
 //
 
 import UIKit
@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // TODO: Pt 1 - Initialize Parse SDK
-        ParseSwift.initialize(applicationId: "To4KYDnJ8WZteWAWmKqVSBgkYWwiC3g0CWOxC2q4",
-                              clientKey: "vVkynlNPciH856SvolDcRDiRMnuBbNNG172dekc5",
+        ParseSwift.initialize(applicationId: "yPW2F5bG7ad7cmHpqcNCOF7CUQQz2swjycGqHQwi",
+                              clientKey: "D6VWFKzgdgSJ0ck7sL6SDqwc7yRzpNWDLomN376j",
                               serverURL: URL(string: "https://parseapi.back4app.com")!)
         // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
 
