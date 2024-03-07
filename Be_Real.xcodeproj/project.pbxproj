@@ -13,6 +13,7 @@
 		56BA9F7C2B9990C70005F390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BA9F7A2B9990C70005F390 /* Main.storyboard */; };
 		56BA9F7E2B9990C80005F390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56BA9F7D2B9990C80005F390 /* Assets.xcassets */; };
 		56BA9F812B9990C80005F390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BA9F7F2B9990C80005F390 /* LaunchScreen.storyboard */; };
+		56BA9F8A2B9992DE0005F390 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 56BA9F892B9992DE0005F390 /* ParseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BA9F8A2B9992DE0005F390 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Be_Real;
+			packageProductDependencies = (
+				56BA9F892B9992DE0005F390 /* ParseSwift */,
+			);
 			productName = Be_Real;
 			productReference = 56BA9F712B9990C70005F390 /* Be_Real.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 56BA9F682B9990C70005F390;
+			packageReferences = (
+				56BA9F882B9992DE0005F390 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = 56BA9F722B9990C70005F390 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56BA9F882B9992DE0005F390 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56BA9F892B9992DE0005F390 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56BA9F882B9992DE0005F390 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56BA9F692B9990C70005F390 /* Project object */;
 }
