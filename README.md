@@ -1,8 +1,8 @@
-# Project 2 - *Name of App Here*
+# Project 2 - *Be Real*
 
-Submitted by: **Your Name Here**
+Submitted by: **Abel Hernandez**
 
-**Name of your app** is an app that ... [TODO] 
+**Be Real** is an app that copies some functionalities of the real Be Real application that allows users to post pictures based on a time limit.
 
 Time spent: **X** hours spent in total
 
