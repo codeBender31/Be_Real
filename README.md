@@ -10,12 +10,12 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] Users see an app icon in the home screen and a styled launch screen.
-- [ ] User can register a new account
-- [ ] User can log in with newly created account
-- [ ] App has a feed of posts when user logs in
-- [ ] User can upload a new post which takes in a picture from photo library and an optional caption	
-- [ ] User is able to logout	
+- [x] Users see an app icon in the home screen and a styled launch screen.
+- [x] User can register a new account
+- [x] User can log in with newly created account
+- [x] App has a feed of posts when user logs in
+- [x] User can upload a new post which takes in a picture from photo library and an optional caption	
+- [x] User is able to logout	
  
 The following **optional** features are implemented:
 
@@ -33,11 +33,12 @@ The following **additional** features are implemented:
 
 Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
 
-[Guide](https://www.youtube.com/watch?v=GA92eKlYio4).
+[Guide](https://github.com/codeBender31/Be_Real/blob/main/Be_Real.gif).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Describe any challenges encountered while building the app. 
+This project was a great learning experience and did not experience a lot of difficulty now that Im more familiar with Xcode.
 
 ## License
 
