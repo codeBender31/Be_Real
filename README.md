@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
 
-[Guide](https://github.com/codeBender31/Be_Real/blob/main/Be_Real.gif).
+![Alt Text](https://github.com/codeBender31/Be_Real/blob/main/Be_Real.gif).
 
 ## Notes
 
