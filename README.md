@@ -4,7 +4,7 @@ Submitted by: **Abel Hernandez**
 
 **Be Real** is an app that copies some functionalities of the real Be Real application that allows users to post pictures based on a time limit.
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
@@ -30,9 +30,6 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
-
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
-
 ![Alt Text](https://github.com/codeBender31/Be_Real/blob/main/Be_Real.gif).
 
 ## Notes
