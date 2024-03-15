@@ -286,8 +286,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                                         <connections>
-                                            <outlet property="captionLabel" destination="w5F-8W-aa3" id="JF4-sf-jGH"/>
-                                            <outlet property="dateLabel" destination="fUP-Sn-Nbi" id="ou4-Bl-xg1"/>
+                                            <outlet property="captionLabel" destination="w5F-8W-aa3" id="bAb-l0-4V0"/>
+                                            <outlet property="dateLabel" destination="fUP-Sn-Nbi" id="zzO-fP-Bpm"/>
                                             <outlet property="postImageView" destination="G25-6h-Uyo" id="ht1-9U-mSa"/>
                                             <outlet property="usernameLabel" destination="dQG-0t-OMT" id="mR3-3z-cXj"/>
                                         </connections>

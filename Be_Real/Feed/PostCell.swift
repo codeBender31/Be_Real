@@ -14,9 +14,9 @@ class PostCell: UITableViewCell {
 
     
     @IBOutlet weak var usernameLabel: UILabel!
-    
-
     @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     private var imageDataRequest: DataRequest?
     
