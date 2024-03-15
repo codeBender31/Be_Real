@@ -23,5 +23,14 @@
 	</dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>&quot;We need access to your gallery to upload the pictures&quot;</string>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;We would like to access your camera to allow you snap a new picture.&quot;</string>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>AppIcon</string>
+		<key>UIColorName</key>
+		<string>launch-screen-background</string>
+	</dict>
 </dict>
 </plist>
