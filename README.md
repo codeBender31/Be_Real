@@ -1,4 +1,4 @@
-# Project 2 - *Be Real*
+# Project 2 & 3 - *Be Real*
 
 Submitted by: **Abel Hernandez**
 
@@ -15,7 +15,12 @@ The following **required** functionality is completed:
 - [x] User can log in with newly created account
 - [x] App has a feed of posts when user logs in
 - [x] User can upload a new post which takes in a picture from photo library and an optional caption	
-- [x] User is able to logout	
+- [x] User is able to logout
+- [ ] User can launch camera to take photo instead of photo library
+  - [ ] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
+- [ ] Users can intereact with posts via comments, comments will have user data such as username and name
+- [ ] Posts have a time and location attached to them
+- [ ] Users are not able to see other photos until they post their own (within 24 hours)
  
 The following **optional** features are implemented:
 
@@ -29,8 +34,11 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
-## Video Walkthrough
+## Video Walkthrough for part 2
 ![Alt Text](https://github.com/codeBender31/Be_Real/blob/main/Be_Real.gif).
+
+## Video Walkthrough for part 3
+![Alt Text]().
 
 ## Notes
 
