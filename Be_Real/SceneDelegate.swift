@@ -89,24 +89,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Test 2
         private func scheduleDailyReminderNotification() {
             let content = UNMutableNotificationContent()
-            content.title = "Reminder"
-            content.body = "Don't forget to share something today!"
-            content.sound = UNNotificationSound.default
+              content.title = "Reminder"
+              content.body = "Hey user214, don't forget to post a photo today!"
+              content.sound = UNNotificationSound.default
 
-            var dateComponents = DateComponents()
-            dateComponents.hour = 10 // for example, 10 AM every day
+              // Set up notification trigger with a short delay (e.g., 5 seconds)
+              let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
 
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+              // Create notification request
+              let request = UNNotificationRequest(identifier: "PostReminder", content: content, trigger: trigger)
 
-            // Create the request
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
-            // Schedule the request with the system.
-            let notificationCenter = UNUserNotificationCenter.current()
-            notificationCenter.add(request) { (error) in
-               if error != nil {
-                   // Handle any errors.
-               }
+              // Add request to notification center
+              let notificationCenter = UNUserNotificationCenter.current()
+              notificationCenter.add(request) { error in
+                  if let error = error {
+                      print("Error scheduling reminder notification: \(error.localizedDescription)")
+                  }
             }
         }
 
@@ -137,6 +135,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        // Schedule the notification only when the app enters the background
+           scheduleDailyReminderNotification()
     }
 }
 
