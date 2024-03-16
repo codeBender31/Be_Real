@@ -9,26 +9,30 @@ Time spent: **5** hours spent in total
 ## Required Features
 
 The following **required** functionality is completed:
-Part 2
+ ### Part 2
+ 
 - [x] Users see an app icon in the home screen and a styled launch screen.
 - [x] User can register a new account
 - [x] User can log in with newly created account
 - [x] App has a feed of posts when user logs in
 - [x] User can upload a new post which takes in a picture from photo library and an optional caption	
 - [x] User is able to logout
-Part 3
-- [ ] User can launch camera to take photo instead of photo library
-  - [ ] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
+      
+### Part 3
+
+- [x] User can launch camera to take photo instead of photo library
+  - [x] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
 - [ ] Users can intereact with posts via comments, comments will have user data such as username and name
 - [ ] Posts have a time and location attached to them
-- [ ] Users are not able to see other photos until they post their own (within 24 hours)
+- [x] Users are not able to see other photos until they post their own (within 24 hours)
  
 The following **optional** features are implemented:
 
 - [ ] Users can pull to refresh their feed and see a loading indicator
 - [ ] Users can infinite-scroll in their feed to see past the 10 most recent photos
 - [ ] Users can see location and time of photo upload in the feed	
-- [ ] User stays logged in when app is closed and open again	
+- [x] User stays logged in when app is closed and open again
+- [x] User receive notifcation when it is time to post
 
 
 The following **additional** features are implemented:
@@ -36,7 +40,7 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough for part 3
-![Alt Text]().
+![Alt Text](https://github.com/codeBender31/Be_Real/blob/main/Be_Real2.gif).
 
 
 ## Video Walkthrough for part 2
@@ -47,6 +51,9 @@ The following **additional** features are implemented:
 
 Describe any challenges encountered while building the app. 
 This project was a great learning experience and did not experience a lot of difficulty now that Im more familiar with Xcode.
+
+Part 2:
+The biggest challenge was trying to implement location and the commenting feature on the app. Due to my lack of experience I was unable to incorporate it. But currently searching ways to extract the metadata to show the location.
 
 ## License
 
