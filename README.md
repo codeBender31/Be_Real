@@ -9,13 +9,14 @@ Time spent: **5** hours spent in total
 ## Required Features
 
 The following **required** functionality is completed:
-
+Part 2
 - [x] Users see an app icon in the home screen and a styled launch screen.
 - [x] User can register a new account
 - [x] User can log in with newly created account
 - [x] App has a feed of posts when user logs in
 - [x] User can upload a new post which takes in a picture from photo library and an optional caption	
 - [x] User is able to logout
+Part 3
 - [ ] User can launch camera to take photo instead of photo library
   - [ ] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
 - [ ] Users can intereact with posts via comments, comments will have user data such as username and name
@@ -34,11 +35,13 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
+## Video Walkthrough for part 3
+![Alt Text]().
+
+
 ## Video Walkthrough for part 2
 ![Alt Text](https://github.com/codeBender31/Be_Real/blob/main/Be_Real.gif).
 
-## Video Walkthrough for part 3
-![Alt Text]().
 
 ## Notes
 
