@@ -52,6 +52,9 @@ The following **additional** features are implemented:
 Describe any challenges encountered while building the app. 
 This project was a great learning experience and did not experience a lot of difficulty now that Im more familiar with Xcode.
 
+Part 2:
+The biggest challenge was trying to implement location and the commenting feature on the app. Due to my lack of experience I was unable to incorporate it. But currently searching ways to extract the metadata to show the location.
+
 ## License
 
     Copyright [yyyy] [name of copyright owner]
