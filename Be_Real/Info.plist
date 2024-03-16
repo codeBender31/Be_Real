@@ -25,6 +25,8 @@
 	<string>&quot;We need access to your gallery to upload the pictures&quot;</string>
 	<key>NSCameraUsageDescription</key>
 	<string>&quot;We would like to access your camera to allow you snap a new picture.&quot;</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;We require access to the meta data to set the location to the posts&quot;</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIImageName</key>

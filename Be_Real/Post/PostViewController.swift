@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import MapKit
 // TODO: Import Photos UI
 import PhotosUI
 // TODO: Import Parse Swift
@@ -162,45 +162,40 @@ class PostViewController: UIViewController {
 // TODO: Pt 1 - Add PHPickerViewController delegate and handle picked image.
 extension PostViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-        // Dismiss the picker
         picker.dismiss(animated: true)
+        
+        guard let result = results.first else {
+            print("No image selected.")
+            return
+        }
 
-        // Make sure we have a non-nil item provider
-        guard let provider = results.first?.itemProvider,
-           // Make sure the provider can load a UIImage
-           provider.canLoadObject(ofClass: UIImage.self) else { return }
+        result.itemProvider.loadObject(ofClass: UIImage.self) { [weak self] (object, error) in
+            DispatchQueue.main.async {
+                guard let self = self, let image = object as? UIImage else {
+                    print("Could not load image.")
+                    return
+                }
 
-        // Load a UIImage from the provider
-        provider.loadObject(ofClass: UIImage.self) { [weak self] object, error in
+                // Update the UI with the image
+                self.previewImageView.image = image
+                self.pickedImage = image
+            }
+        }
 
-           // Make sure we can cast the returned object to a UIImage
-           guard let image = object as? UIImage else {
+        // Assuming the user grants access, fetch the asset's location data
+        if result.itemProvider.canLoadObject(ofClass: UIImage.self) {
+            guard let assetId = result.assetIdentifier else {
+                print("Asset ID not found.")
+                return
+            }
 
-              // ❌ Unable to cast to UIImage
-              self?.showAlert()
-              return
-           }
-
-           // Check for and handle any errors
-          if let error = error {
-              self?.showAlert(description: error.localizedDescription)
-             return
-           } else {
-
-              // UI updates (like setting image on image view) should be done on main thread
-              DispatchQueue.main.async {
-
-                 // Set image on preview image view
-                 self?.previewImageView.image = image
-
-                 // Set image to use when saving post
-                 self?.pickedImage = image
-              }
-           }
+            let assets = PHAsset.fetchAssets(withLocalIdentifiers: [assetId], options: nil)
+            if let asset = assets.firstObject {
+                // Now you have access to the PHAsset object and can access its location property
+                print("Image location: \(String(describing: asset.location))")
+            }
         }
     }
-    
-
 }
 
 // TODO: Pt 2 - Add UIImagePickerControllerDelegate + UINavigationControllerDelegate
@@ -215,7 +210,16 @@ extension PostViewController: UIImagePickerControllerDelegate, UINavigationContr
               print("❌📷 Unable to get image")
               return
           }
-
+        
+//        // Get image location
+//        // PHAsset contains metadata about an image or video (ex. location, size, etc.)
+//        guard let assetId = image.assetIdentifier,
+//              let location = PHAsset.fetchAssets(withLocalIdentifiers: [assetId], options: nil).firstObject?.location else {
+//            return
+//        }
+//
+//        print("📍 Image location coordinate: \(location.coordinate)")
+        
           // Set image on preview image view
           previewImageView.image = image
 

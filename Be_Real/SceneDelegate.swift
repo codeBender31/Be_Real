@@ -43,6 +43,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func login() {
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.feedNavigationControllerIdentifier)
+        
+        //Test
+        // Request notification permissions
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound]) { granted, error in
+                // Enable or disable features based on authorization
+                if granted {
+                    self.scheduleDailyReminderNotification()
+                }
+            }
     }
 
     private func logOut() {
@@ -52,6 +62,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             switch result {
             case .success:
+                
+                //Test 3
+                UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+                
 
                 // Make sure UI updates are done on main thread when initiated from background thread.
                 DispatchQueue.main.async {
@@ -71,6 +85,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
 
     }
+        
+        //Test 2
+        private func scheduleDailyReminderNotification() {
+            let content = UNMutableNotificationContent()
+            content.title = "Reminder"
+            content.body = "Don't forget to share something today!"
+            content.sound = UNNotificationSound.default
+
+            var dateComponents = DateComponents()
+            dateComponents.hour = 10 // for example, 10 AM every day
+
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+
+            // Create the request
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+            // Schedule the request with the system.
+            let notificationCenter = UNUserNotificationCenter.current()
+            notificationCenter.add(request) { (error) in
+               if error != nil {
+                   // Handle any errors.
+               }
+            }
+        }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
