@@ -24,7 +24,6 @@
 		56BA9F9E2B9A66330005F390 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 56BA9F9D2B9A66330005F390 /* AlamofireDynamic */; };
 		56BA9FA12B9A66B20005F390 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 56BA9FA02B9A66B20005F390 /* AlamofireImage */; };
 		56BA9FA42B9A68BA0005F390 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BA9FA32B9A68BA0005F390 /* PostViewController.swift */; };
-		56BA9FA72BA4017A0005F390 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BA9FA62BA4017A0005F390 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		56BA9F962B9A65720005F390 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		56BA9F982B9A657F0005F390 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		56BA9FA32B9A68BA0005F390 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		56BA9FA62BA4017A0005F390 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				56BA9FA32B9A68BA0005F390 /* PostViewController.swift */,
-				56BA9FA62BA4017A0005F390 /* PostCell.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -229,7 +226,6 @@
 				56BA9F902B9A468C0005F390 /* LoginViewController.swift in Sources */,
 				56BA9F992B9A657F0005F390 /* PostCell.swift in Sources */,
 				56BA9F942B9A64E50005F390 /* Post.swift in Sources */,
-				56BA9FA72BA4017A0005F390 /* PostCell.swift in Sources */,
 				56BA9F972B9A65720005F390 /* FeedViewController.swift in Sources */,
 				56BA9F772B9990C70005F390 /* SceneDelegate.swift in Sources */,
 			);

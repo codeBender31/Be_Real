@@ -276,16 +276,29 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfW-mD-JQ7">
+                                                    <rect key="frame" x="0.0" y="39.333333333333343" width="390" height="390"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="80N-Va-g2R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="390"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <blurEffect style="regular"/>
+                                                </visualEffectView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="fg2-JN-NsP" secondAttribute="trailing" priority="999" id="G5X-7O-mlB"/>
+                                                <constraint firstAttribute="trailing" secondItem="UfW-mD-JQ7" secondAttribute="trailing" id="UIS-cz-QM7"/>
+                                                <constraint firstItem="UfW-mD-JQ7" firstAttribute="bottom" secondItem="G25-6h-Uyo" secondAttribute="bottom" id="aA8-7F-sjI"/>
                                                 <constraint firstItem="fg2-JN-NsP" firstAttribute="top" secondItem="EvC-EF-v9N" secondAttribute="topMargin" id="l7u-oT-9Gk"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="fg2-JN-NsP" secondAttribute="bottom" priority="999" id="vit-td-jAp"/>
+                                                <constraint firstItem="UfW-mD-JQ7" firstAttribute="leading" secondItem="EvC-EF-v9N" secondAttribute="leading" id="wVI-sb-pTA"/>
                                                 <constraint firstItem="fg2-JN-NsP" firstAttribute="leading" secondItem="EvC-EF-v9N" secondAttribute="leading" id="xYZ-Yu-Ijm"/>
+                                                <constraint firstItem="UfW-mD-JQ7" firstAttribute="top" secondItem="G25-6h-Uyo" secondAttribute="top" id="y5Z-mx-GH1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                                         <connections>
+                                            <outlet property="blurView" destination="UfW-mD-JQ7" id="4IM-kw-Mez"/>
                                             <outlet property="captionLabel" destination="w5F-8W-aa3" id="bAb-l0-4V0"/>
                                             <outlet property="dateLabel" destination="fUP-Sn-Nbi" id="zzO-fP-Bpm"/>
                                             <outlet property="postImageView" destination="G25-6h-Uyo" id="ht1-9U-mSa"/>
